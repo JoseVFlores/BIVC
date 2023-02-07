@@ -7,7 +7,7 @@
           <meta name="description" content="">
           <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
           <meta name="generator" content="Hugo 0.108.0">
-          <title>Desarrollo Comercial</title>
+          <title>Headers · Bootstrap v5.3</title>
 
           <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/headers/">
 
@@ -75,6 +75,7 @@
 
           <!-- Custom styles for this template -->
           <link href="headers.css" rel="stylesheet">
+            <link href="sidebars.css" rel="stylesheet">
   </head>
     
   <body>
@@ -110,8 +111,9 @@
         <a  class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
             <img class="mb-4" src="../img/logottoalnegro.png" alt="" width="75" height="100">
         </a>
-        
-        
+       <h1>
+        METRO NOT
+        </h1> 
         <!-- <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
           <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
           <li><a href="#" class="nav-link px-2 link-dark">Features</a></li>
@@ -126,7 +128,7 @@
           <!-- <a href="/signup" class="btn btn-outline-primary me-2">Signup</a> -->
           <% } else { %>
           <a href="/logout" class="btn btn-outline-primary me-2">Cerrar sesión</a>
-          <a href="/profile" class="btn btn-outline-primary me-2">Inicio</a>
+          </a>
           <% } %>
           <!-- a  class="btn btn-primary">Sign-up</a> -->
         </div>
@@ -135,9 +137,88 @@
 
      <!-- SLIDEBAR -->
 
-  
-
+<div class="flex-shrink-0 p-3 bg-white" style="width: 280px;">
+    <!-- <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+      <svg class="bi pe-none me-2" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+      <span class="fs-5 fw-semibold">Collapsible</span>
+    </a> -->
+    <ul class="list-unstyled ps-0">
+      <li class="mb-1">
+        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+          Dashboards
+        </button>
+        <div class="collapse show" id="home-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="/aeropuerto" class="link-dark d-inline-flex text-decoration-none rounded">Aeropuerto</a></li>
+            <li><a href="/aragon" class="link-dark d-inline-flex text-decoration-none rounded">Aragón</a></li>
+            <li><a href="/chalco_ixtapaluca" class="link-dark d-inline-flex text-decoration-none rounded">Chalco Ixtapaluca</a></li>
+            <li><a href="/coacalco" class="link-dark d-inline-flex text-decoration-none rounded">Coacalco</a></li>
+            <li><a href="/constitucion" class="link-dark d-inline-flex text-decoration-none rounded">Constitución</a></li>
+            <li><a href="/ecatepec" class="link-dark d-inline-flex text-decoration-none rounded">Ecatepec</a></li>
+            <li><a href="/huehuetoca" class="link-dark d-inline-flex text-decoration-none rounded">Huehuetoca</a></li>
+            <li><a href="/iztapalapa" class="link-dark d-inline-flex text-decoration-none rounded">Iztapalapa</a></li>
+            <li><a href="/los_reyes" class="link-dark d-inline-flex text-decoration-none rounded">Los Reyes</a></li>
+            <li><a href="/neza1" class="link-dark d-inline-flex text-decoration-none rounded">Neza 1</a></li>
+            <li><a href="/neza2" class="link-dark d-inline-flex text-decoration-none rounded">Neza 2</a></li>
+            <li><a href="/oda" class="link-dark d-inline-flex text-decoration-none rounded">Ojo de Agua</a></li>
+            <li><a href="/tecamac" class="link-dark d-inline-flex text-decoration-none rounded">Tecámac</a></li>
+            <li><a href="/texcoco" class="link-dark d-inline-flex text-decoration-none rounded">Texcoco</a></li>
+            <li><a href="/tlerma" class="link-dark d-inline-flex text-decoration-none rounded">Toluca Lerma</a></li>
+            <li><a href="/tsncarlos" class="link-dark d-inline-flex text-decoration-none rounded">Toluca San Carlos</a></li>
+            <li><a href="/tzonac" class="link-dark d-inline-flex text-decoration-none rounded">Toluca ZC</a></li>
+            <li><a href="/tultepec" class="link-dark d-inline-flex text-decoration-none rounded">Tultepec</a></li>
+            <li><a href="/vallechalco" class="link-dark d-inline-flex text-decoration-none rounded">Valle de Chalco</a></li>
+          </ul>
+        </div>
+      </li>
+      <!-- <li class="mb-1">
+        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+          Dashboard
+        </button>
+        <div class="collapse" id="dashboard-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Overview</a></li>
+            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Weekly</a></li>
+            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Monthly</a></li>
+            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Annually</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+          Orders
+        </button>
+        <div class="collapse" id="orders-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">New</a></li>
+            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Processed</a></li>
+            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Shipped</a></li>
+            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Returned</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="border-top my-3"></li>
+      <li class="mb-1">
+        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+          Account
+        </button>
+        <div class="collapse" id="account-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">New...</a></li>
+            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Profile</a></li>
+            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Settings</a></li>
+            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Sign out</a></li>
+          </ul>
+        </div>
+      </li> -->
+    </ul>
+  </div>
+     
    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+
+    <script src="sidebars.js"></script>
 
   </body>
 

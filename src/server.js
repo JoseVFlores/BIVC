@@ -16,6 +16,7 @@ app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'))
 app.engine('ejs', engine);
 app.set('view engine', 'ejs');
+app.use(express.static(path.join(__dirname,'views')));
 
 // middlewares
 app.use(morgan('dev'));
@@ -33,7 +34,7 @@ app.use((req, res, next) => {
   app.locals.signinMessage = req.flash('signinMessage');
   app.locals.signupMessage = req.flash('signupMessage');
   app.locals.user = req.user;
-  console.log(app.locals)
+  /*console.log(app.locals)*/
   next();
 });
 
