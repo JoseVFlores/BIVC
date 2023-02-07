@@ -1,6 +1,8 @@
 const router = require('express').Router();
 const passport = require('passport');
 const User = require('../models/user');
+const express = require('express')
+
 
 router.get('/', (req, res, next) => {
   res.render('index');
